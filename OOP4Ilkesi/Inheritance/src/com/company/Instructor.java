@@ -17,4 +17,13 @@ public class Instructor extends Academician{
         this.doorNumber = doorNumber;
     }
 
+    @Override
+    public void entrance(){
+        System.out.println(this.getNameSurname() + " öğretim görevlisi B kapısından giriş yaptı.");
+    }
+
+    @Override
+    public void attendClass(String entranceTime){
+        System.out.println(this.getNameSurname() + " öğretim görevlisi derse " + entranceTime + " saatinde başladı.");
+    }
 }

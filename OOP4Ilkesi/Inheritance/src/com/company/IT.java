@@ -17,6 +17,10 @@ public class IT extends Officer {
         this.jobDescriptions = jobDescriptions;
     }
 
+    @Override
+    public void entrance(){
+        System.out.println(this.getNameSurname() + " D kapısından içeri girdi.");
+    }
     public void setUpNetwork(){
         System.out.println(this.getNameSurname() + " tarafından network kuruldu.");
     }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Employee {
+public abstract class Employee {
     private String nameSurname;
     private String mobile;
     private String email;
@@ -37,6 +37,14 @@ public class Employee {
 
     public void entrance(){
         System.out.println(this.nameSurname + " üniversiteye giriş yaptı.");
+    }
+
+    public void entrance(String entranceTime){
+        System.out.println(this.nameSurname + " " + entranceTime + " saatinde giriş yaptı.");
+    }
+
+    public void entrance(String entranceTime, String exitTime){
+        System.out.println(this.nameSurname + " " + entranceTime + " saatinde giriş yaptı," + exitTime + " saatinde çıkacaktır.");
     }
 
     public void exit(){

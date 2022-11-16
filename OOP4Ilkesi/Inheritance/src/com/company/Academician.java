@@ -1,6 +1,6 @@
 package com.company;
 
-public class Academician extends Employee{
+public abstract class  Academician extends Employee{
     private String department;
     private String title;
 
@@ -26,7 +26,10 @@ public class Academician extends Employee{
         this.title = title;
     }
 
-    public void attendAClass(){
-        System.out.println(this.getNameSurname() + " derse giriş yaptı.");
+    public abstract void attendClass(String entranceTime);
+
+    @Override
+    public void entrance(){
+        System.out.println(this.getNameSurname() + " akademisyeni A kapısından giriş yaptı.");
     }
 }

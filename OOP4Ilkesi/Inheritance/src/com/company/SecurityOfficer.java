@@ -8,6 +8,11 @@ public class SecurityOfficer extends Officer {
         this.document = document;
     }
 
+    @Override
+    public void entrance(){
+        System.out.println(this.getNameSurname() + " güvenlik görevlisi B kapısından giriş yaptı");
+    }
+
     public void guardDuty(){
         System.out.println(this.getNameSurname() + " dokümasyonu.");
     }

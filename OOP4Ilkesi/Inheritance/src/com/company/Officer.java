@@ -1,6 +1,6 @@
 package com.company;
 
-public class Officer extends Employee {
+public abstract class Officer extends Employee {
     private String department;
     private String shift;
 
@@ -31,4 +31,5 @@ public class Officer extends Employee {
     }
 
 
+    public abstract void entrance();
 }
